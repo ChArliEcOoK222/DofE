@@ -1,8 +1,10 @@
-var playerName: String = ""
-let playerQuestion: String = "Will I be able to go to New Year's?"
+// game variables
+var playerName: String = "NAME"
+let playerQuestion: String = "QUESTION"
 let randomNumber: Int = Int.random(in: 1...9)
 let eightBall: String
 
+// switch statement checking for value of number
 switch randomNumber {
   case 1:
     eightBall = "Yes - definetly"
@@ -22,10 +24,13 @@ switch randomNumber {
     eightBall = "Outlook not so good"
   case 9:
     eightBall = "Very doubtful"
+  // if it has no case
   default:
     eightBall = "Error"
 }
 
+// ternary conditional operator to print messages
 playerName.isEmpty ? print("\(playerQuestion)") : print("\(playerName) asks: \(playerQuestion)")
 
+// printing overall answer
 print("Magic 8 Ball's anwer: \(eightBall)")
