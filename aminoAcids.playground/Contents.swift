@@ -1,7 +1,7 @@
+// variable to store three lettered codon
 var codon = "UUU"
 
-// Checking for each amino acid
-
+// checking the variable to locate the associated amino acid
 switch codon {
 case "UUU", "UUC":
     print("Phenylalanine")
