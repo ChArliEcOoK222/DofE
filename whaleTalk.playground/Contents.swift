@@ -1,4 +1,3 @@
-// Create your Whale Talk program below:
 var input = "hello my name is charlie"
 
 var output = ""
